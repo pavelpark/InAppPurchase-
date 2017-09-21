@@ -24,6 +24,7 @@
 		DB5394C11F72FCE1009E92E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5394C31F72FCE1009E92E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB5394CA1F7398EE009E92E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 		DB5394C91F7398EE009E92E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */,
 				DB5394CA1F7398EE009E92E4 /* StoreKit.framework */,
 			);
 			name = Frameworks;
