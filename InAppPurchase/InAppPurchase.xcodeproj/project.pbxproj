@@ -59,11 +59,9 @@
 		DB5394B61F72FCE1009E92E4 /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
-				DB5394B71F72FCE1009E92E4 /* AppDelegate.swift */,
-				DB5394B91F72FCE1009E92E4 /* ViewController.swift */,
-				DB5394BB1F72FCE1009E92E4 /* Main.storyboard */,
-				DB5394BE1F72FCE1009E92E4 /* Assets.xcassets */,
-				DB5394C01F72FCE1009E92E4 /* LaunchScreen.storyboard */,
+				DB5394CD1F739EB4009E92E4 /* Model */,
+				DB5394CE1F739EBD009E92E4 /* View */,
+				DB5394CF1F739EC8009E92E4 /* Controller */,
 				DB5394C31F72FCE1009E92E4 /* Info.plist */,
 			);
 			path = InAppPurchase;
@@ -76,6 +74,32 @@
 				DB5394CA1F7398EE009E92E4 /* StoreKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB5394CD1F739EB4009E92E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB5394B71F72FCE1009E92E4 /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB5394CE1F739EBD009E92E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB5394BB1F72FCE1009E92E4 /* Main.storyboard */,
+				DB5394BE1F72FCE1009E92E4 /* Assets.xcassets */,
+				DB5394C01F72FCE1009E92E4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB5394CF1F739EC8009E92E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB5394B91F72FCE1009E92E4 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
