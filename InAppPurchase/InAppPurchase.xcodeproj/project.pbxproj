@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB074AAA1F7B1B110052198B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */; };
+		DB074AAD1F7B1EDC0052198B /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB074AAC1F7B1EDC0052198B /* PurchaseManager.swift */; };
 		DB5394B81F72FCE1009E92E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5394B71F72FCE1009E92E4 /* AppDelegate.swift */; };
 		DB5394BA1F72FCE1009E92E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5394B91F72FCE1009E92E4 /* ViewController.swift */; };
 		DB5394BD1F72FCE1009E92E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5394BB1F72FCE1009E92E4 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB074AAC1F7B1EDC0052198B /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		DB5394B41F72FCE1009E92E4 /* InAppPurchase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InAppPurchase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5394B71F72FCE1009E92E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5394B91F72FCE1009E92E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB074AAB1F7B1EB30052198B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DB074AAC1F7B1EDC0052198B /* PurchaseManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DB5394AB1F72FCE0009E92E4 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		DB5394B61F72FCE1009E92E4 /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
+				DB074AAB1F7B1EB30052198B /* Services */,
 				DB5394CD1F739EB4009E92E4 /* Model */,
 				DB5394CE1F739EBD009E92E4 /* View */,
 				DB5394CF1F739EC8009E92E4 /* Controller */,
@@ -182,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5394BA1F72FCE1009E92E4 /* ViewController.swift in Sources */,
+				DB074AAD1F7B1EDC0052198B /* PurchaseManager.swift in Sources */,
 				DB5394B81F72FCE1009E92E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
