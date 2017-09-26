@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB074AAA1F7B1B110052198B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */; };
 		DB5394B81F72FCE1009E92E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5394B71F72FCE1009E92E4 /* AppDelegate.swift */; };
 		DB5394BA1F72FCE1009E92E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5394B91F72FCE1009E92E4 /* ViewController.swift */; };
 		DB5394BD1F72FCE1009E92E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5394BB1F72FCE1009E92E4 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5394CB1F7398EE009E92E4 /* StoreKit.framework in Frameworks */,
+				DB074AAA1F7B1B110052198B /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = InAppPurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -335,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6X88V8MC7R;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = InAppPurchase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
