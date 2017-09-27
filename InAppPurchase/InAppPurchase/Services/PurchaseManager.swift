@@ -13,11 +13,23 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
     
     static let instance = PurchaseManager()
     
+    let IAP_REMOVE_ADS = "com.PavelPark.InAppPurchase.remove.ads"
+    
+    var productsRequest: SKProductsRequest!
+    var product = [SKProduct]()
+    
+    func fetchProducts () {
+        let productIds = NSSet(object: IAP_REMOVE_ADS) as! Set<String>
+        productsRequest = SKProductsRequest(productIdentifiers: productIds)
+        productsRequest.delegate = self
+        productsRequest.start()
+    }
+    
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
-        <#code#>
+        
     }
     
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        <#code#>
+        
     }
 }
