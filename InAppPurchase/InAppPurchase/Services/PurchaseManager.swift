@@ -27,6 +27,10 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
     
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         
+        if response.products.count > 0 {
+            print(response.products.debugDescription)
+            product = response.products
+        }
     }
     
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
