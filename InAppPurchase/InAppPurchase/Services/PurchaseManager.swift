@@ -25,6 +25,15 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
         productsRequest.start()
     }
     
+    func purchaseRemoveAds() {
+        if SKPaymentQueue.canMakePayments() && product.count > 0 {
+            let removeAdsProduct = product[0]
+            let payment = SKPayment(product: removeAdsProduct)
+            SKPaymentQueue.default().add(self)
+            SKPaymentQueue.default().add(payment)
+        }
+    }
+    
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         
         if response.products.count > 0 {
