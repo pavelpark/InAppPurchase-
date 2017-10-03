@@ -6,6 +6,8 @@
 //  Copyright © 2017 Pavel Parkhomey. All rights reserved.
 //
 
+typealias CompletionHandler = (_ success: Bool) -> ()
+
 import Foundation
 import StoreKit
 
@@ -17,6 +19,7 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
     
     var productsRequest: SKProductsRequest!
     var product = [SKProduct]()
+    var transactionComplete: CompletionHandler?
     
     func fetchProducts () {
         let productIds = NSSet(object: IAP_REMOVE_ADS) as! Set<String>
@@ -25,12 +28,15 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
         productsRequest.start()
     }
     
-    func purchaseRemoveAds() {
+    func purchaseRemoveAds(onComplete: @escaping CompletionHandler) {
         if SKPaymentQueue.canMakePayments() && product.count > 0 {
+            transactionComplete = onComplete
             let removeAdsProduct = product[0]
             let payment = SKPayment(product: removeAdsProduct)
             SKPaymentQueue.default().add(self)
             SKPaymentQueue.default().add(payment)
+        } else {
+            onComplete(false)
         }
     }
     

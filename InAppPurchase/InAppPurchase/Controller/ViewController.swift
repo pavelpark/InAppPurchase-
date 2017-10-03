@@ -12,14 +12,20 @@ import GoogleMobileAds
 class ViewController: UIViewController {
 
     @IBOutlet weak var bannerView: GADBannerView!
-    
     @IBOutlet weak var removeAdsBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        
+        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) == nil {
+            bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+        } else {
+            removeAdsBtn.removeFromSuperview()
+            bannerView.removeFromSuperview()
+        }
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,7 +34,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func removeAdsPressed(_ sender: Any) {
-        
+        PurchaseManager.instance.purchaseRemoveAds()
     }
     
 }
