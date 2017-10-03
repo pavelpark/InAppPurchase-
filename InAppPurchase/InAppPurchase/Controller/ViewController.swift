@@ -17,15 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) == nil {
+        if UserDefaults.standard.bool(forKey: PurchaseManager.instance.IAP_REMOVE_ADS) {
+            removeAdsBtn.removeFromSuperview()
+            bannerView.removeFromSuperview()
+        } else {
             bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
             bannerView.rootViewController = self
             bannerView.load(GADRequest())
-        } else {
-            removeAdsBtn.removeFromSuperview()
-            bannerView.removeFromSuperview()
         }
-       
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +34,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func removeAdsPressed(_ sender: Any) {
-        PurchaseManager.instance.purchaseRemoveAds()
+        //show a loading spinner ActivityIndicator.
+        PurchaseManager.instance.purchaseRemoveAds { success in
+            //dismiss the spinner.
+            if success {
+                self.bannerView.removeFromSuperview()
+                self.removeAdsBtn.removeFromSuperview()
+            } else {
+                //show message to the user.
+            }
+        }
     }
     
 }
