@@ -40,6 +40,16 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
         }
     }
     
+    func restorePurchases(onComplete: @escaping CompletionHandler) {
+        if SKPaymentQueue.canMakePayments() {
+            transactionComplete = onComplete
+            SKPaymentQueue.default().add(self)
+            SKPaymentQueue.default().restoreCompletedTransactions()
+        } else {
+            onComplete(false)
+        }
+    }
+    
     func productsRequest(_ request: SKProductsRequest, didReceive response: SKProductsResponse) {
         
         if response.products.count > 0 {

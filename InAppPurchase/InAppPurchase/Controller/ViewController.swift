@@ -32,7 +32,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func restoreBtnPressed(_ sender: Any) {
+        PurchaseManager.instance.restorePurchases { success in
+            
+        }
+    }
+    
     @IBAction func removeAdsPressed(_ sender: Any) {
         //show a loading spinner ActivityIndicator.
         PurchaseManager.instance.purchaseRemoveAds { success in
