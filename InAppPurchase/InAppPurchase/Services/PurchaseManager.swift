@@ -45,6 +45,7 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
             transactionComplete = onComplete
             SKPaymentQueue.default().add(self)
             SKPaymentQueue.default().restoreCompletedTransactions()
+            
         } else {
             onComplete(false)
         }
@@ -74,6 +75,9 @@ class PurchaseManager: NSObject, SKProductsRequestDelegate, SKPaymentTransaction
                 break
             case .restored:
                 SKPaymentQueue.default().finishTransaction(transaction)
+                if transaction.payment.productIdentifier == IAP_REMOVE_ADS {
+                    UserDefaults.standard.set(true, forKey: IAP_REMOVE_ADS)
+                }
                 transactionComplete?(true)
             default:
                 transactionComplete?(false)
