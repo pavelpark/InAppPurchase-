@@ -16,6 +16,10 @@
 		DB5394C21F72FCE1009E92E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5394C01F72FCE1009E92E4 /* LaunchScreen.storyboard */; };
 		DB5394CB1F7398EE009E92E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5394CA1F7398EE009E92E4 /* StoreKit.framework */; };
 		DBBC44851FA3085A00C20FBA /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC44841FA3085A00C20FBA /* InstagramLoginViewController.swift */; };
+		DBBC448A1FA3C59B00C20FBA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBC44861FA3C59B00C20FBA /* FBSDKLoginKit.framework */; };
+		DBBC448B1FA3C59B00C20FBA /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBC44871FA3C59B00C20FBA /* Bolts.framework */; };
+		DBBC448C1FA3C59B00C20FBA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBC44881FA3C59B00C20FBA /* FBSDKShareKit.framework */; };
+		DBBC448D1FA3C59B00C20FBA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBC44891FA3C59B00C20FBA /* FBSDKCoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		DB5394CA1F7398EE009E92E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		DBBC44841FA3085A00C20FBA /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
+		DBBC44861FA3C59B00C20FBA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DBBC44871FA3C59B00C20FBA /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DBBC44881FA3C59B00C20FBA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		DBBC44891FA3C59B00C20FBA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +46,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5394CB1F7398EE009E92E4 /* StoreKit.framework in Frameworks */,
+				DBBC448D1FA3C59B00C20FBA /* FBSDKCoreKit.framework in Frameworks */,
 				DB074AAA1F7B1B110052198B /* GoogleMobileAds.framework in Frameworks */,
+				DBBC448C1FA3C59B00C20FBA /* FBSDKShareKit.framework in Frameworks */,
+				DBBC448A1FA3C59B00C20FBA /* FBSDKLoginKit.framework in Frameworks */,
+				DBBC448B1FA3C59B00C20FBA /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,10 @@
 		DB5394C91F7398EE009E92E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBBC44871FA3C59B00C20FBA /* Bolts.framework */,
+				DBBC44891FA3C59B00C20FBA /* FBSDKCoreKit.framework */,
+				DBBC44861FA3C59B00C20FBA /* FBSDKLoginKit.framework */,
+				DBBC44881FA3C59B00C20FBA /* FBSDKShareKit.framework */,
 				DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */,
 				DB5394CA1F7398EE009E92E4 /* StoreKit.framework */,
 			);
