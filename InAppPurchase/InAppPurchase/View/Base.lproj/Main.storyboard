@@ -147,18 +147,19 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Instagram Login View Controller-->
         <scene sceneID="4CG-W1-Kmw">
             <objects>
-                <viewController id="vVq-9f-04S" sceneMemberID="viewController">
+                <viewController id="vVq-9f-04S" customClass="InstagramLoginViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egO-66-dCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstagramLogin" translatesAutoresizingMaskIntoConstraints="NO" id="97y-3S-8cG">
-                                <rect key="frame" x="65" y="209" width="244" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJd-h8-H4g">
+                                <rect key="frame" x="27" y="164" width="321" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" image="InstagramLogin"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Kgb-Lf-siW"/>
