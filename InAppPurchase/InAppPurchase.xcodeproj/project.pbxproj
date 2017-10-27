@@ -15,6 +15,7 @@
 		DB5394BF1F72FCE1009E92E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5394BE1F72FCE1009E92E4 /* Assets.xcassets */; };
 		DB5394C21F72FCE1009E92E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5394C01F72FCE1009E92E4 /* LaunchScreen.storyboard */; };
 		DB5394CB1F7398EE009E92E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5394CA1F7398EE009E92E4 /* StoreKit.framework */; };
+		DBBC44851FA3085A00C20FBA /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBC44841FA3085A00C20FBA /* InstagramLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DB5394C31F72FCE1009E92E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB5394CA1F7398EE009E92E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DB5394CC1F739B6E009E92E4 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		DBBC44841FA3085A00C20FBA /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				DB5394B91F72FCE1009E92E4 /* ViewController.swift */,
+				DBBC44841FA3085A00C20FBA /* InstagramLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				DB5394BA1F72FCE1009E92E4 /* ViewController.swift in Sources */,
 				DB074AAD1F7B1EDC0052198B /* PurchaseManager.swift in Sources */,
 				DB5394B81F72FCE1009E92E4 /* AppDelegate.swift in Sources */,
+				DBBC44851FA3085A00C20FBA /* InstagramLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

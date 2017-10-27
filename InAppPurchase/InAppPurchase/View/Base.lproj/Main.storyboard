@@ -154,17 +154,24 @@
                     <view key="view" contentMode="scaleToFill" id="egO-66-dCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InstagramLogin" translatesAutoresizingMaskIntoConstraints="NO" id="97y-3S-8cG">
+                                <rect key="frame" x="65" y="209" width="244" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Kgb-Lf-siW"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8A-0w-On4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="134"/>
+            <point key="canvasLocation" x="1000.8" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
         <image name="BGImage" width="475" height="300"/>
+        <image name="InstagramLogin" width="603" height="113"/>
         <image name="restore" width="31" height="27"/>
         <image name="videoThumbnail" width="375" height="250"/>
     </resources>
